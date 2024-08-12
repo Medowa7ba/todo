@@ -1,0 +1,104 @@
+body {
+  background-color: color-mix(in srgb, blue 60%, white 30%);
+}
+body .todo {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  font-family: sans-serif;
+}
+body .todo-body {
+  background-color: #fff;
+  width: 660px;
+  padding: 40px;
+  border-radius: 20px;
+}
+body .todo-body form {
+  display: flex;
+}
+body .todo-body form input {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+body ul {
+  margin: 0;
+  padding: 0;
+}
+body ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.26);
+  padding: 15px 25px;
+  margin-top: 17px;
+  width: 600px;
+}
+body ul li h3 {
+  margin: 0;
+  width: 230px;
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+}
+
+button {
+  padding: 0 25px;
+  border-radius: 4px;
+  min-width: 70px;
+  height: 50px;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.15em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+  position: relative;
+  overflow: hidden;
+  border: solid 1px color-mix(in srgb, blue 60%, white 30%);
+  cursor: pointer;
+}
+button:after, button:before {
+  width: 0%;
+  height: 0%;
+  content: "";
+  position: absolute;
+  border-radius: 100%;
+}
+button:after {
+  transition: all 0.5s ease;
+  background-color: white;
+}
+button:before {
+  transition: all 0.5s ease-out;
+  background: color-mix(in srgb, blue 60%, white 30%);
+}
+button span {
+  z-index: 1;
+  transition: all 0.3s ease-out;
+}
+button.cta-01 {
+  background-color: color-mix(in srgb, blue 60%, white 30%) !important;
+  color: white;
+}
+button:hover.cta-01 {
+  color: color-mix(in srgb, blue 60%, white 30%);
+}
+button:hover.cta-02 {
+  color: white;
+}
+button:hover:after, button:hover:before {
+  width: 200px;
+  height: 200px;
+  border-radius: 4px;
+}
+button:hover:after {
+  transition: all 0.7s ease-in;
+}
+button:hover:before {
+  transition: all 0.5s ease-in;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./dist/app.js" defer></script>
+</head>
+<body>
+        <div class="todo">
+            <div class="todo-body">
+                <form>
+                    <input type='text' placeholder='Add Todo'>
+                    <div class="buttons">
+                        <button class="cta-01 addTodo"  type="submit"  class=""><span>Add</span></button>
+                      </div>        
+                    </form>
+                    <template>
+                        <li>
+                            <div>
+
+                                <h3></h3>
+                            </div>
+                            <div style="display: flex;">
+                                <div class="buttons">
+                                    <button class='del cta-01 '><span>Delete</span></button>
+                                  </div>   
+                                  <div class="buttons">
+                                    <button class='edit cta-01 '><span>Edit</span></button>
+                                  </div>   
+                            </div>
+                        </li>
+                      </template>
+                      <ul></ul>  
+            </div>
+        </div>
+</body>
+</html>

@@ -1,0 +1,121 @@
+body{
+    background-color: color-mix(in srgb, blue 60%, white 30%);
+    .todo{
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        height: 100vh;
+        font-family: sans-serif;
+        &-body{
+        background-color: #fff;
+        width: 660px;
+        padding: 40px;
+        border-radius: 20px;
+        form{
+            display: flex;
+            input{
+                width: 100%;
+                padding: 10px;
+                outline: none;
+                border: 1px solid  #ccc;
+                border-radius: 8px;
+            }
+          
+          }
+        }
+        }
+        ul{
+         margin: 0;
+         // transition: .2s;
+         padding: 0;
+         li{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.26);
+            padding: 15px 25px;
+            margin-top: 17px;
+            width: 600px;
+            h3{
+               margin: 0;
+               width: 230px;
+               white-space: nowrap;
+               overflow: hidden !important;
+               text-overflow: ellipsis;
+            }
+         }
+        }
+    }
+
+    button {
+      padding: 0 25px;
+      border-radius: 4px;
+      min-width: 70px;
+      height: 50px;
+      font-weight: 600;
+      font-size: 12px;
+      letter-spacing: 0.15em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 10px;
+      position: relative;
+      overflow: hidden;
+      border: solid 1px 
+      color-mix(in srgb, blue 60%, white 30%);
+      cursor: pointer;
+
+      &:after,
+      &:before {
+         width: 0%;
+         height: 0%;
+         content: "";
+         position: absolute;
+         border-radius: 100%;
+      }
+
+      &:after {
+         transition: all 0.5s ease;
+         background-color: white;
+      }
+
+      &:before {
+         transition: all 0.5s ease-out;
+         background:color-mix(in srgb, blue 60%, white 30%);
+      }
+
+      span {
+         z-index: 1;
+         transition: all 0.3s ease-out;
+      }
+
+      &.cta-01 {
+        background-color: color-mix(in srgb, blue 60%, white 30%) !important;
+
+         color: white;
+      }
+
+
+      &:hover {
+         &.cta-01 {
+            color: 
+            color-mix(in srgb, blue 60%, white 30%);
+         }
+         &.cta-02 {
+            color: white;
+         }
+         &:after,
+         &:before {
+            width: 200px;
+            height: 200px;
+            border-radius: 4px;
+         }
+         &:after {
+            transition: all 0.7s ease-in;
+         }
+         
+         &:before {
+            transition: all 0.5s ease-in;
+         }
+      }
+   }
