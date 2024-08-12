@@ -28,8 +28,8 @@
       return this.instance;
     }
       protected getTodoList() {
-      new TodoList(this.todos, 'Pending');
-      new TodoList(this.todos, 'Finished');
+      new TodoList(this.todos,);
+      new TodoList(this.todos,);
     }
   
     addTodo(id: string, input: string) {
@@ -121,10 +121,9 @@
     class TodoList {
     constructor(
       private todoItems: TodoStructure[],
-      private type: 'Pending' | 'Finished',
     ) {
       this.display();
-      console.log(this.type);
+
     }
   
     private display() {

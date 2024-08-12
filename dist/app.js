@@ -24,8 +24,8 @@ class AppState {
         return this.instance;
     }
     getTodoList() {
-        new TodoList(this.todos, 'Pending');
-        new TodoList(this.todos, 'Finished');
+        new TodoList(this.todos);
+        new TodoList(this.todos);
     }
     addTodo(id, input) {
         const todoItem = new TodoStructure(id, input);
@@ -100,11 +100,9 @@ class TodoItem {
     }
 }
 class TodoList {
-    constructor(todoItems, type) {
+    constructor(todoItems) {
         this.todoItems = todoItems;
-        this.type = type;
         this.display();
-        console.log(this.type);
     }
     display() {
         document.querySelector('ul').innerText = '';
